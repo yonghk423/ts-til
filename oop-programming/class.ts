@@ -25,5 +25,4 @@
     }
 
     const maker = new CoffeeMaker(32);
-    console.log(maker);
 }
