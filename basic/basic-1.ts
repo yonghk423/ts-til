@@ -37,7 +37,27 @@
     */
     
     // any : 어떠한 것이든 모두 담을 수 있는 변수이다. 자바스크립트에서 타입스크릡트로 전환하는 과정에서 사용을 하는 경우가 있지만 지양하는 것이 좋다.
-
     let anything: any = 0;
+
+    // void : 아무런 값도 리턴하지 않을 때 사용한다. 하지만 생략은 가능하다. 변수에 할당하여 사용하는 경우는 극히 드물다.
+    function print(): void {
+        console.log('hello');
+        return
+    }
+
+    // never : 함수에서 절대 리턴 되지 않을 때 그것을 명시하는 경우에 사용한다.
+    function throwError(message: string): never {
+        // message -> server (log)
+        throw new Error(message);
+        while (true) {}
+    }
+
+    // object : object 타입은 원시타입을 제외한 모든 타입을 할당 할수가 있다.
+    let obj: object;
+    function acceptSomeObject(obj: object) {
+
+    }
+    acceptSomeObject({name: 'yonghee'});
+    acceptSomeObject({ toy: 'toy'});
 
 }
