@@ -20,7 +20,7 @@
     let nmae: undefined // 이렇게는 거의 사용하지 않는다.
     let age : number | undefined; //보통 이렇게 많이 사용 된다.
     age = undefined;
-    age = 1
+    age = 7;
     
     // null : 조금 더 명확하게 비어있다고 명시해준다.
     let person = null;
